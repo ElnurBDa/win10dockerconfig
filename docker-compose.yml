@@ -1,0 +1,21 @@
+services:
+  windows:
+    image: dockurr/windows
+    container_name: windows
+    environment:
+      VERSION: "win10"
+      DISK_SIZE: "25G"
+      RAM_SIZE: "3G"
+      CPU_CORES: "2"
+    devices:
+      - /dev/kvm
+    volumes:
+      - /var/win:/storage
+      - /home/elnur/win:/shared
+    cap_add:
+      - NET_ADMIN
+    ports:
+      - 8006:8006
+      - 3389:3389/tcp
+      - 3389:3389/udp
+    stop_grace_period: 2m
