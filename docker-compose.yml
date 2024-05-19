@@ -5,7 +5,7 @@ services:
     environment:
       VERSION: "win10"
       DISK_SIZE: "25G"
-      RAM_SIZE: "3G"
+      RAM_SIZE: "4G"
       CPU_CORES: "2"
     devices:
       - /dev/kvm
