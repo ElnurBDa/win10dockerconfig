@@ -4,3 +4,7 @@ It seems faster than to run Windows on docker than on VMWare or Virtual Box. It 
 ```bash
 xfreerdp /u:docker /v:172.18.0.2 /dynamic-resolution
 ```
+# With External Storage
+```bash
+sudo mount /dev/sda1 /win
+```

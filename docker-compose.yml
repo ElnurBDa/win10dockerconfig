@@ -10,8 +10,8 @@ services:
     devices:
       - /dev/kvm
     volumes:
-      - /var/win:/storage
-      - /home/elnur/win:/shared
+      - /win/storage:/storage
+      - /win/shared:/shared
     cap_add:
       - NET_ADMIN
     ports:
