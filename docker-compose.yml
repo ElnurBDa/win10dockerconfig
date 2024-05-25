@@ -5,13 +5,13 @@ services:
     environment:
       VERSION: "win10"
       DISK_SIZE: "25G"
-      RAM_SIZE: "4G"
+      RAM_SIZE: "3G"
       CPU_CORES: "2"
     devices:
       - /dev/kvm
     volumes:
-      - /win/storage:/storage
-      - /win/shared:/shared
+      - ./storage:/storage
+      - ./shared:/shared
     cap_add:
       - NET_ADMIN
     ports:
